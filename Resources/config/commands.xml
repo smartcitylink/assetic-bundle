@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="assetic.dump_command.class">Symfony\Bundle\AsseticBundle\Command\DumpCommand</parameter>
+        <parameter key="assetic.watch_command.class">Symfony\Bundle\AsseticBundle\Command\WatchCommand</parameter>
+    </parameters>
+
+    <services>
+        <service id="assetic.command.dump" class="%assetic.dump_command.class%" public="true">
+            <tag name="console.command" command="assetic:dump" />
+        </service>
+        <service id="assetic.command.watch" class="%assetic.watch_command.class%" public="true">
+            <tag name="console.command" command="assetic:watch" />
+        </service>
+    </services>
+</container>
