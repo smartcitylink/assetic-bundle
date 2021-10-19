@@ -1,8 +1,12 @@
 {
-    "name": "apelaez-link/assetic-bundle",
+    "name": "smartcitylink/assetic-bundle",
     "description": "Integrates Assetic into Symfony2",
-    "keywords": ["assets", "compression", "minification"],
-    "homepage": "https://github.com/apelaez-link/assetic-bundle",
+    "keywords": [
+        "assets",
+        "compression",
+        "minification"
+    ],
+    "homepage": "https://github.com/smartcitylink/assetic-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -20,7 +24,7 @@
         "symfony/http-kernel": "~2.3|~3.0|~4.0",
         "symfony/templating": "~2.3|~3.0|~4.0",
         "symfony/yaml": "~2.3|~3.0|~4.0",
-        "apelaez-link/assetic": "^1.6"
+        "smartcitylink/assetic": "^1.6"
     },
     "require-dev": {
         "patchwork/jsqueeze": "~1.0",
@@ -43,7 +47,9 @@
         "kriswallsmith/spork": "to be able to dump assets in parallel"
     },
     "autoload": {
-        "psr-4": { "Symfony\\Bundle\\AsseticBundle\\": "" }
+        "psr-4": {
+            "Symfony\\Bundle\\AsseticBundle\\": ""
+        }
     },
     "config": {
         "bin-dir": "bin"
